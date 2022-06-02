@@ -1,0 +1,95 @@
+.App {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.current-account {
+  padding: 1rem;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+  margin-top: 1rem;
+  color: gray;
+  font-weight: 300;
+}
+
+.connect-wallet {
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-box {
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.form-box input {
+  padding: 1rem;
+  font: 1.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.loader {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid rgb(59, 59, 59); /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-top: 0.5rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.submit {
+  padding: 1rem 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: grey;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.show-transactions {
+  background-color: lightgray;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.transaction-card {
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.transaction-card h4 {
+  font-weight: 500;
+  padding: 0.2rem 0;
+}
